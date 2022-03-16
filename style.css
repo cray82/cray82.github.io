@@ -9,6 +9,7 @@ h1 {
     font-size: 5em;
     justify-content: center;
     text-shadow: .5px .5px 1px white;
+    justify-content: space-around;
 }
 #animated-banner {
   position: relative;
@@ -49,8 +50,8 @@ p1 {
 .flex {
     display: flex;
     justify-content: center;
-    max-width: fit-content;
-    align-items: inherit;
+   
+    
   }
 .contact-card {
   display: flex;
@@ -67,7 +68,7 @@ img {
 @media only screen and (max-width: 600px) {
 
     h1 {
-        text-shadow: 1px 1px 2px rgb(177, 171, 171);
+        text-shadow: 1px 1px 2px white ;
     }
     p1 {
       max-width: 90%;

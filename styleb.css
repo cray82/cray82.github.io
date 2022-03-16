@@ -1,18 +1,32 @@
 body {
-    background-color: rgb(236, 167, 142);
+    background-color: coral;
 }
 h1 {
     font-size: 2em;
     text-align: center;
     text-shadow: .5px .5px 1px white;
 }
-
-
-
+form {
+    display: flex;
+    align-content: center;
+    max-width: 100em;
+}
+.buttons {
+    background-color: hsl(160, 36%, 70%);
+    border-radius: 20%;
+    border-bottom: 20px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: hsl(160, 36%, 50%);
+}
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+
+    }
+    form {
+        flex-direction: column;
+        
+
     }
 
-}
