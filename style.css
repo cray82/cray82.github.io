@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: coral;
+}
+h1 {
+    display: flex;
+    font-size: 5em;
+    justify-content: center;
+    text-shadow: .5px .5px 1px white;
+}
+#animated-banner {
+  position: relative;
+  animation: scrollMe 5s 1;
+  animation-direction: alternate-reverse;
+  background-color: rgb(112, 100, 100);
+  text-shadow: #f2f2f2;
+  
+  
+
+}
+@keyframes scrollMe {
+  0% {left: 0%;}
+  25% {left: 25%;}
+  50% {left: 50%;}
+  75% {left: 75%;}
+  100% {left: 90%;}
+}
+@keyframes arrive {
+  0% {opacity: 0%;}
+  25% {opacity: 25%;}
+  50% {opacity: 75%;}
+  100% {opacity: 100%;}
+}
+p1 {
+    font-size: 2em;
+    padding: .3em .5em .3em .5em;
+    
+    background-color: hsl(160, 36%, 70%);
+    max-width: 70ch;
+    border-radius: 10%;
+    border: 2px solid white;
+    animation: arrive 3s linear;
+    animation-direction: normal;
+
+
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    align-items: inherit;
+  }
+.contact-card {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+ 
+}
+img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: .3em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        text-shadow: 1px 1px 2px rgb(177, 171, 171);
+    }
+    p1 {
+      max-width: 90%;
+    }
+  }
+  .topnav {
+    box-sizing: border-box;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
